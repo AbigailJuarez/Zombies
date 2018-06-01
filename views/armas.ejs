@@ -1,24 +1,43 @@
 <% include header%>
+<style>
+div.item {
+    position: relative;
+    width: 225px;
+    border: 1px solid #cccccc;
+    text-align: center;
+    border-radius: 4px;
+    padding-top: 50px;
+    display: inline-block;
+}
+div img{
+    width: 80%;
+}
+</style>
 <h2>
     Clase de zoombies  
 </h2>
 <form method="post" role= "from">
-    <div class="from-group">
-        <label for="title"> Zombie corredor </label>
-        <img src="//"/>
-        </div>
-    <div class="from-group">
-        <label for="body"> Zombie Explosibo </label>
-       <img src=""/>
+<div class="item">
+<p><strong> Bate </strong></p>
+<img src="/recursos/arma1.jpg"/>
+<p>
 
-    </div>
-    <div class="from-group">
-    <label for="body"> Zombie come plantas </label>
-    <img src=""/>
- </div>
- <div class="from-group">
- <label for="body"> Zombie nazi </label>
- <img src=""/>
+</p>    
+
 </div>
+<div class="item">
+<p><strong> C4 </strong></p>
+<img src="/recursos/arma2.jpg"/>    
+</div>
+<div class="item">
+<p><strong> Tijeras de jardin</strong></p>
+<img src="/recursos/arma3.jpg"/>    
+</div>
+<div class="item">
+<p><strong> Raygun </strong></p>
+<img src="/recursos/arma4.jpg"/>    
+
+</div>
+
 </form>
 <% include footer %>

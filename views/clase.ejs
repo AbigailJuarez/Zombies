@@ -1,24 +1,40 @@
 <% include header%>
+<style>
+div.item {
+    position: relative;
+    width: 225px;
+    border: 1px solid #cccccc;
+    text-align: center;
+    border-radius: 4px;
+    padding-top: 50px;
+    display: inline-block;
+}
+div img{
+    width: 60%;
+}
+</style>
 <h2>
     Clase de zoombies  
 </h2>
 <form method="post" role= "from">
-    <div class="from-group">
-        <label for="title"> Zombie corredor </label>
-        <img src="/recursos/zombie1.jpg"/>
-        </div>
-    <div class="from-group">
-        <label for="body"> Zombie Explosibo </label>
-       <img src="/recursos/zombie2.jpg"/>
+<div class="item">
+<p><strong> Zombie Explosibo </strong></p>
+<img src="/recursos/zombie2.jpg"/>    
 
-    </div>
-    <div class="from-group">
-    <label for="body"> Zombie come plantas </label>
-    <img src="/recursos/zombie3.jpg"/>
- </div>
- <div class="from-group">
- <label for="body"> Zombie nazi </label>
- <img src="/recursos/zombie4.jpg"/>
 </div>
+<div class="item">
+<p><strong> Zombie corredor </strong></p>
+<img src="/recursos/zombie1.jpg"/>    
+</div>
+<div class="item">
+<p><strong> Zombie Come planta</strong></p>
+<img src="/recursos/zombie3.jpg"/>    
+</div>
+<div class="item">
+<p><strong> Zombie nazi </strong></p>
+<img src="/recursos/zombie4.jpg"/>    
+
+</div>
+
 </form>
 <% include footer %>

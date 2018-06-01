@@ -22,6 +22,7 @@ app.use(bodyParser.urlencoded({ extended: false}));
 app.get('/index',(request,response)=> response.render('index'));
 
 app.get('/clase',(request,response)=> response.render('clase'));
+app.get('/armas',(request,response)=> response.render('armas'));
 
 app.post('/new-entry',(request,response)=>{
     if(!request.body.title || !request.body.body){
