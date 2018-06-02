@@ -1,24 +1,77 @@
 <% include header%>
-<h2>
-    Clase de zoombies  
-</h2>
-<form method="post" role= "from">
-    <div class="from-group">
-        <label for="title"> Zombie corredor </label>
-        <img src="/recursos/zombie1.jpg"/>
-        </div>
-    <div class="from-group">
-        <label for="body"> Zombie Explosibo </label>
-       <img src="/recursos/zombie2.jpg"/>
+<style>
+div.info {
+    position: relative;
+    width: 225px;
+    border: 1px solid #cccccc;
+    text-align: center;
+    border-radius: 4px;
+    padding-top: 25px;
+    display: inline-block;
+    color:white;
+}
+div.encabezado{
+    color:white;
+}
+div img{
+    width: 150px;
+    color:white;
+}
+body{
+    background: url("/recursos/fondo1.jpg");
+}
+p{
+    font-size: 20px;
+    color:white;
+}
+</style>
 
-    </div>
-    <div class="from-group">
-    <label for="body"> Zombie come plantas </label>
-    <img src="/recursos/zombie3.jpg"/>
- </div>
- <div class="from-group">
- <label for="body"> Zombie nazi </label>
- <img src="/recursos/zombie4.jpg"/>
+<form method="post" role= "from">
+<div class="encabezado">
+<h2>Victimas </h2>
+<p>Los victimas son personas comunes que son inmunes a la infección ya que poseen el gen portador por parte paterna 
+(están infectados pero no se convierten en zombies), sin embargo el gen también hace que puedan infectar a otras 
+personas. </p>
+</div>
+
+<form method="post" role= "from">
+<div class="info">
+<p><strong> Bill</strong></p>
+<img src="/recursos/bill.png"/>
+<p>Bill es un ex-soldado, miembro del U.S. Army 1st Special Forces Group, y el mejor de su pelotón. Cuando era 
+joven participó en la guerra de Vietnam y su desempeño mereció muchas condecoraciones, pero también fue herido 
+en una pierna </p>    
+</div>
+
+<div class="info">
+<p><strong> Francis</strong></p>
+<img src="/recursos/francis.png"/>
+<p> Un rudo motociclista con tatuajes en gran parte de su cuerpo. Odia prácticamente todo excepto su chaleco y 
+eliminar zombies. Francis le contaba a algunos amigos suyos y su novia como es le que la habia caido una sentencia 
+en prision despues de robar un televisor </p>    
+</div>
+
+<div class="info">
+<p><strong> Louis</strong></p>
+<img src="/recursos/louis.png"/> 
+<p>Hasta antes de la infección era un típico empleado de oficina en una empresa en Philadelphia, estado de 
+Pensilvania. Mientras se encontraba en el baño, un infectado lo ataca y lucha desenfrenadamente contra el hasta 
+que lo mata con un dispensador de papel higiénico.</p>   
+</div>
+
+<div class="info">
+<p><strong> Zoey</strong></p>
+<img src="/recursos/zoey.png"/>    
+<p> Es una chica que paso gran parte de su primer semestre de la universidad viendo peliculas de terror con su padre. 
+Durante la infeccion, Zoey se encontraba en una cena/platica con sus padres Wade y Carolyn, mientras su madre le 
+reprochaba que ella habia sido enviada a la Universidad de Aldrich para aprender a hacer peliculas. </p>
+</div>
+
+<div class="info">
+<p><strong> Nick</strong></p>
+<img src="/recursos/nick.jpg"/>    
+<p> Un estafador y ludópata de 35 años del cual no se sabe su origen. Se la pasa viajando de ciudad en ciudad 
+buscando la forma fácil de ganar mucho dinero. Su vida le ha llevado a aprender una gran lección: no confiar en nadie. </p>
 </div>
 </form>
 <% include footer %>

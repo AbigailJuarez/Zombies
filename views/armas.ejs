@@ -1,43 +1,73 @@
 <% include header%>
 <style>
-div.item {
+div.info {
     position: relative;
     width: 225px;
     border: 1px solid #cccccc;
     text-align: center;
     border-radius: 4px;
-    padding-top: 50px;
+    padding-top: 25px;
     display: inline-block;
+    color: white;
+}
+div.encabezado{
+    color: white;
+}
+p{
+    font-size: 20px;
+    color: white;
 }
 div img{
     width: 80%;
 }
+body{
+    background: url("/recursos/fondo3.jpg");
+}
 </style>
-<h2>
-    Clase de zoombies  
-</h2>
+
 <form method="post" role= "from">
-<div class="item">
-<p><strong> Bate </strong></p>
-<img src="/recursos/arma1.jpg"/>
-<p>
-
-</p>    
-
-</div>
-<div class="item">
-<p><strong> C4 </strong></p>
-<img src="/recursos/arma2.jpg"/>    
-</div>
-<div class="item">
-<p><strong> Tijeras de jardin</strong></p>
-<img src="/recursos/arma3.jpg"/>    
-</div>
-<div class="item">
-<p><strong> Raygun </strong></p>
-<img src="/recursos/arma4.jpg"/>    
-
+<div class="encabezado">
+<h2>Armas </h2>
+<p>Las Armas son utilizadas por los Supervivientes y se presentan de diversas maneras. Las armas se presentan de 
+dos maneras diferentes: Las Armas primarias y las Secundarias. Todas las armas tienen una linterna adjunta 
+con batería ilimitada. </p>
 </div>
 
+<form method="post" role= "from">
+<div class="info">
+<p><strong> Escopeta </strong></p>
+<img src="/recursos/escopeta.png"/>
+<p>La Escopeta permite recargar rápidamente en el camino, y el proceso de recarga puede ser detenido para 
+reaccionar ante amenazas repentinas utilizando tiros ya cargadas.</p>    
+</div>
+
+<div class="info">
+<p><strong> Metralleta </strong></p>
+<img src="/recursos/metralleta.png"/>
+<p> Dada su capacidad para abatir objetivos a mediano alcance, tiene una precisión inherente y una alta cadencia 
+de fuego, la ametralladora es una buena alternativa a la Escopeta que resulta ser lenta y de menor alcance. </p>    
+</div>
+
+<div class="info">
+<p><strong> Rifle de Asalto</strong></p>
+<img src="/recursos/rifle_de_asalto.png"/> 
+<p>El Rifle de Asalto es el arma más flexible y capaz disponible. Tanto si se está limpiando una habitación, o se 
+esta enfrentando a una horda o para ser usado como francotirador contra un Infectado Especial desde lejos.</p>   
+</div>
+
+<div class="info">
+<p><strong> Rifle de Caza </strong></p>
+<img src="/recursos/rifle_de_caza.png"/>    
+<p>El Rifle de caza es un arma de medio a largo alcance y es el más adecuado para atacar objetivos en áreas abiertas. 
+Un ejemplo claro es que es ideal para estar de pie y hacer de francotirador a una calle llena de infectados comunes 
+antes de salir de un edificio o callejón. </p>
+</div>
+
+<div class="info">
+<p><strong> Lanzagranadas </strong></p>
+<img src="/recursos/lanzagranada.png"/>    
+<p>Tiene un diseño de rotura abierta, el Lanzagranadas sólo puede contener un proyectil en un momento y tiene un 
+tiempo de recarga largo. Tiene una mira en el cañón del arma que permanece de forma permanente </p>
+</div>
 </form>
 <% include footer %>

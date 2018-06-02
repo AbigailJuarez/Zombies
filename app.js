@@ -21,12 +21,14 @@ app.use(bodyParser.urlencoded({ extended: false}));
 
 app.get('/index',(request,response)=> response.render('index'));
 
-app.get('/clase',(request,response)=> response.render('clase'));
-app.get('/armas',(request,response)=> response.render('armas'));
+app.get('/clase',(request,response)=> response.render('Clase'));
+app.get('/armas',(request,response)=> response.render('Armas'));
+app.get('/victimas',(request,response)=> response.render('Victimas'));
+
 
 app.post('/new-entry',(request,response)=>{
     if(!request.body.title || !request.body.body){
-        response.status(400).send('las entradas deben de tener un titulo y un menaje');
+        response.status(400).send('¡Las victimas deben ser registradas!');
         return;
     }
     entries.push({
@@ -38,5 +40,5 @@ app.post('/new-entry',(request,response)=>{
 });
 app.use((request,response)=>response.status(404).render('404'));
 http.createServer(app).listen(3000,()=>
-console.log('la palicacion Guestbook esta corriendo en el puerto 3000')
+console.log('corriendo en el puerto 3000')
 );
