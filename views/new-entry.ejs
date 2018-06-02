@@ -1,20 +1,18 @@
 <%include header%>
-    <h2>Crea una Nueva Entrada</h2>
+    <h2>Nueva victima registrada</h2>
     <form method="post" role="form">
         <div class="form-group">
             <label for="litle">Titulo</label>
             <input type="text" class="form-control"
-            id="title" name="title" placeholder="Escribe un titulo" required/>
+            id="title" name="title" placeholder="Nombre de la Victima" required/>
         </div>
         <div class="form-group">
             <label for="body">Mensaje</label>
-            <textarea class="form-control"
-            id="body" name="body" placeholder="Escribe un Mensaje" rows="3" required>
+            <textarea name="body" placeholder="Causa de muerte" rows="3" required>
         </textarea>
         </div>
         <div class="form-group">
-            <input type="submit" class="btn btn-primary" value="Aceptar"/>
+            <input type="submit" class="btn-primary" value="Aceptar"/>
         </div>
     </form> 
 <%include footer%>
-
